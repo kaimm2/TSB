@@ -1,0 +1,3 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Aepione/Prensado/refs/heads/main/Prensado%20camlock"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kaimm2/BloxFruits/refs/heads/main/Speed"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/kaimm2/BloxFruits/refs/heads/main/Redz"))()
