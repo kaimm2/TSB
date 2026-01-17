@@ -1,5 +1,6 @@
-loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/3522742f0b4c7b2831c0a768fc2415b4766ef3a9c04313ea8864b67ea720b6d7/download"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kaimm2/TSB/refs/heads/main/TinhTrung"))()
 
 
+loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/3522742f0b4c7b2831c0a768fc2415b4766ef3a9c04313ea8864b67ea720b6d7/download"))()
 
