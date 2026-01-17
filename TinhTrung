@@ -1,2 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/kaimm2/TthanhFolder/refs/heads/main/updatethongbao"))()
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/kaimm2/TSB/refs/heads/main/PvPTongHop"))()
