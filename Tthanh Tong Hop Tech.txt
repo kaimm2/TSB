@@ -1,2 +1,152 @@
+--[[ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⠤⡶⠲⠲⠖⠖⠖⠶⠤⢤⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⣤⣀⣤⣤⣶⣿⡟⢉⠉⡁⢐⣠⣤⣤⣄⡀⠠⠀⠀⠀⠉⠙⢷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢶⣿⣿⣿⣿⣿⠍⡐⠠⢁⠂⢰⣿⠿⢿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠙⢿⣗⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣿⣿⠿⣙⠢⠉⡄⠱⠀⢆⠀⡀⠀⠀⠀⠀⠈⠿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⡿⣭⣳⠢⠡⠁⠈⡁⢎⡐⣂⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠹⣆⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⢿⠋⡀⠀⠀⠀⠀⠰⣬⣾⡟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⣊⣔⣀⡀⠀⠀⠀⣿⣟⠡⡉⢀⠀⠀⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡿⢛⠛⢛⣿⣧⣄⣸⣿⣿⡿⠿⠿⠿⢿⣤⣤⣀⣀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⣿⣿⣿⡡⠀⢾⣿⣿⣾⣿⣿⢧⡐⡀⠀⠀⣾⣧⣿⣿⡏⠛⢦⡄⠐⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣷⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣧⢿⣷⣄⠈⠻⠿⠟⣻⠻⣷⣲⢡⠀⠀⠻⢿⣿⠿⠃⢀⣼⠇⢐⠠⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢘⡗⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣿⠉⠉⢷⡀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣻⣯⠻⢿⣿⣤⣴⡶⣟⢣⡽⢿⣧⣟⣤⡒⡤⢤⣤⣶⠿⠃⡐⢌⠠⠀⢂⠒⠠⠀⢂⠀⠀⠀⠌⢇⢺⣿⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⠀⠈⢯⡄⠀⠀⠀⠀⠘⣿⣿⣿⣯⢿⣿⣮⣝⢯⡹⡱⢎⢣⠛⡷⣭⣛⠿⠿⠿⠿⢛⢁⠢⡑⢨⠀⠆⡉⠤⡘⠄⠡⠀⢀⠐⢀⡀⢠⣿⡿⣤⡀⠀⠀⠀
+⠀⠀⣀⣀⣀⣀⣀⣤⣬⣿⣂⠀⠀⠙⣆⠀⠀⠀⣿⣿⣾⣿⣟⣯⡿⣽⣿⣎⠵⡱⢈⠂⢍⠰⡁⠙⠛⠶⢶⠌⠂⠄⡃⠄⠃⠘⡰⡎⠇⠐⢀⠂⠀⡀⢀⠠⣐⣷⠏⠀⠈⣷⠀⠀⠀
+⡶⠋⢣⡠⠀⣠⠀⠀⠀⠀⠉⠂⠀⠀⢸⡄⡀⠀⠸⣿⣿⣿⣿⣯⣟⣯⣟⣯⡳⣅⠣⠌⢀⠣⠀⠀⠀⠀⠀⠀⠀⢀⠁⠠⠁⠂⢠⠥⠅⠈⢐⠈⡁⠠⢀⣶⠟⠁⠀⢰⣿⠛⠀⠀⠀
+⣧⣤⡼⠥⠤⠓⠶⠒⠈⠉⠉⠒⠢⢄⡈⠛⣇⠀⢿⣿⣯⡞⣿⣾⣽⢯⡿⣽⣳⢮⣱⣎⣴⣨⣡⡄⡀⢀⣀⣀⣀⡀⠀⠀⠀⠀⡤⣀⠢⡐⢄⠒⠠⢴⡿⠇⢒⠲⣾⠛⠁⠀⠀⠀⠀
+⠹⢯⣤⣀⣤⣤⣤⣴⣦⣴⣤⣤⣀⣴⠄⣸⡿⠀⠀⢿⣿⣿⣽⣿⣿⣻⣽⣻⣟⣛⠛⡛⢛⠛⡛⠛⠛⠋⣉⣩⣥⡴⣖⠳⣎⠥⣍⢢⠱⣈⢦⣡⣼⢋⣤⡶⠖⡀⠉⣲⡦⢤⣀⣀⠀
+⠀⠈⠉⠉⠉⠉⠉⠀⠈⠉⠙⠛⠻⠿⡿⠋⠀⠀⠀⠀⠈⣿⣿⡿⣿⣿⣯⣷⣿⣿⣷⣯⣦⣳⣴⣳⣮⣿⣿⢷⣧⣟⣼⡻⣬⢳⣎⢧⣻⣴⡿⠟⠒⣿⡏⣠⡼⣫⡾⠋⠰⣦⢀⣈⣱
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣯⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣽⡾⣽⢯⣟⣾⣻⣿⣿⣣⣶⣣⠍⠛⠿⣾⣏⠀⠀⠀⣼⣆⣴⡻
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣟⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣷⣿⣿⣯⡀⠀⢀⣿⠻⠿⠛⠛⠉⠁⠉⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⠛⠛⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡠⠤⢬⡉⠛⢻⠿⣿⠿⢿⣿⣿⡿⠟⠛⠛⠋⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣾⣿⣷⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⢀⡀⢤⣄⣤⣤⣄⣄⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣻⣿⡇⠀⠀⠀⠀⣻⣥⣽⣿⣿⣍⣿⣶⣋⣲⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣤⣶⣿⣿⣿⣿⣿⡟⢣⡏⣿⡇⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣶⣶⣯⣽⣼⣯⢭⡝⠛⡟⠡⢌⠣⠜⣿⣧⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⠿⡤⠉⡌⠓⠺⢦⡼⠖⣋⠔⣈⠢⢁⣿⠟⣧⣠⢤⣶⣿⣿⣿⣿⣿⡟⢣⠝⣷⢾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⢿⠿⣶⣥⣤⣀⣄⠠⢌⣳⣬⡾⢾⢛⣩⣿⡿⡿⢿⠿⡿⣗⠺⡏⢙⡿⣄⠂⡜⠠⢮⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⢿⣷⣦⣄⣉⠉⠉⠙⠛⣉⣥⣶⣾⣿⣿⡿⣵⢫⣃⢎⡐⡉⠛⠿⣉⠳⡌⢷⣄⠓⣼⡾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠛⠻⠟⠛⠋⠀⢾⣿⣟⠻⠿⢷⣼⣦⣴⣠⣍⣲⣥⣳⣼⡾⠟⠛⣉⣴⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠿⢿⣶⣢⣄⣀⣈⠉⢉⡙⢉⣡⣤⣶⡶⠿⠛⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠙⠛⠛⠓⠛⠛⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+ ]]
+
+local TweenService = game:GetService("TweenService")
+local CoreGui = game:GetService("CoreGui")
+local Lighting = game:GetService("Lighting")
+
+local TIME_DURATION = 25 -- Chỉnh thành 25 giây theo ý ông
+local FRAME_SIZE = UDim2.new(0, 340, 0, 150)
+local FINAL_POSITION = UDim2.new(0.5, 0, 0.5, 0)
+local START_POSITION = UDim2.new(0.5, 0, -0.3, 0)
+
+local blurEffect = Instance.new("BlurEffect")
+blurEffect.Name = "LoadingBlur"
+blurEffect.Size = 0
+blurEffect.Parent = Lighting
+
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "TthanhhubLoading_V2"
+screenGui.Parent = CoreGui
+screenGui.IgnoreGuiInset = true
+
+local mainFrame = Instance.new("Frame")
+mainFrame.Name = "MainFrame"
+mainFrame.Size = FRAME_SIZE
+mainFrame.Position = START_POSITION
+mainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+mainFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+mainFrame.BackgroundTransparency = 0.2
+mainFrame.BorderSizePixel = 0
+mainFrame.Active = true
+mainFrame.Parent = screenGui
+
+local uiCorner = Instance.new("UICorner")
+uiCorner.CornerRadius = UDim.new(0, 15)
+uiCorner.Parent = mainFrame
+
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Name = "TitleLabel"
+titleLabel.Size = UDim2.new(1, 0, 0, 35)
+titleLabel.Position = UDim2.new(0, 0, 0.15, 0)
+titleLabel.BackgroundTransparency = 1
+titleLabel.Text = "Tthanhhub Loading"
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.TextSize = 17
+titleLabel.Font = Enum.Font.GothamBold
+titleLabel.Parent = mainFrame
+
+local percentLabel = Instance.new("TextLabel")
+percentLabel.Name = "PercentLabel"
+percentLabel.Size = UDim2.new(1, 0, 0, 25)
+percentLabel.Position = UDim2.new(0, 0, 0.48, 0)
+percentLabel.BackgroundTransparency = 1
+percentLabel.Text = "0%"
+percentLabel.TextColor3 = Color3.fromRGB(220, 220, 220)
+percentLabel.TextSize = 14
+percentLabel.Font = Enum.Font.GothamMedium
+percentLabel.Parent = mainFrame
+
+local barBackground = Instance.new("Frame")
+barBackground.Size = UDim2.new(0.85, 0, 0, 4)
+barBackground.Position = UDim2.new(0.075, 0, 0.7, 0)
+barBackground.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+barBackground.BorderSizePixel = 0
+barBackground.Parent = mainFrame
+
+local barCorner = Instance.new("UICorner")
+barCorner.CornerRadius = UDim.new(1, 0)
+barCorner.Parent = barBackground
+
+local barFill = Instance.new("Frame")
+barFill.Size = UDim2.new(0, 0, 1, 0)
+barFill.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+barFill.BorderSizePixel = 0
+barFill.Parent = barBackground
+
+local fillCorner = Instance.new("UICorner")
+fillCorner.CornerRadius = UDim.new(1, 0)
+fillCorner.Parent = barFill
+
+TweenService:Create(mainFrame, TweenInfo.new(0.8, Enum.EasingStyle.Back, Enum.EasingDirection.Out), {Position = FINAL_POSITION}):Play()
+TweenService:Create(blurEffect, TweenInfo.new(0.5), {Size = 15}):Play()
+
+task.wait(0.8) -- Đợi hiện xong rồi mới bắt đầu load
+
+local loadTween = TweenService:Create(barFill, TweenInfo.new(TIME_DURATION, Enum.EasingStyle.Linear), {Size = UDim2.new(1, 0, 1, 0)})
+loadTween:Play()
+
+local startTime = tick()
+spawn(function()
+    while tick() - startTime < TIME_DURATION do
+        local elapsed = tick() - startTime
+        local progress = math.min(math.floor((elapsed / TIME_DURATION) * 100), 100)
+        percentLabel.Text = progress .. "%"
+        
+        local dots = string.rep(".", (math.floor(elapsed * 2) % 4))
+        titleLabel.Text = "Tthanhhub Loading" .. dots
+        
+        task.wait(0.1)
+    end
+    
+    percentLabel.Text = "100%"
+    titleLabel.Text = "Tthanhhub Loading..."
+    task.wait(0.5)
+
+    local fadeInfo = TweenInfo.new(0.6)
+    TweenService:Create(mainFrame, fadeInfo, {BackgroundTransparency = 1, Position = UDim2.new(0.5, 0, 0.55, 0)}):Play()
+    TweenService:Create(titleLabel, fadeInfo, {TextTransparency = 1}):Play()
+    TweenService:Create(percentLabel, fadeInfo, {TextTransparency = 1}):Play()
+    TweenService:Create(barBackground, fadeInfo, {BackgroundTransparency = 1}):Play()
+    TweenService:Create(barFill, fadeInfo, {BackgroundTransparency = 1}):Play()
+    local blurOut = TweenService:Create(blurEffect, fadeInfo, {Size = 0})
+    blurOut:Play()
+
+    blurOut.Completed:Connect(function()
+        screenGui:Destroy()
+        blurEffect:Destroy()
+    end)
+end)
+
 getgenv().Key = "KEYLESS"
 loadstring(game:HttpGet("https://api.jnkie.com/api/v1/luascripts/public/1b8e5876c1f5d73500bf3844f0f1db80a97ce7552c01298f7012f6620e68aaa2/download"))()
